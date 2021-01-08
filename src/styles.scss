@@ -1,0 +1,60 @@
+/* You can add global styles to this file, and also import other style files */
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;700&display=swap");
+@import url("https://stackpath.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css");
+
+.bg-primary-sun {
+  background: #f5f6fa;
+}
+
+.bg-white {
+  background: #000;
+}
+
+.bg-grey {
+  background-color: #f5f6fa;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.orange-sun {
+  color: #e17908;
+}
+
+.orange-bg-sun {
+  background-color: #e17908;
+}
+
+.blue-sun {
+  color: #4a90e2;
+}
+
+.pink-sun {
+  color: #d35e5e;
+}
+
+.w-full {
+  width: 100%;
+}
+.square_btn {
+  display: inline-block;
+  padding: 4px 20px;
+  border-radius: 25px;
+  border: none;
+
+  &:focus {
+    border: none;
+    outline: none;
+  }
+}
+
+.heading-container {
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+.filter-icon{
+  cursor: pointer;
+}

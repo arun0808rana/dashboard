@@ -1,0 +1,26 @@
+footer {
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  background-color: #ffab74;
+  position: sticky;
+  bottom: 0;
+}
+
+header {
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  background-color: #fff;
+}
+
+.bg-grey {
+  background-color: #f5f6fa;
+}
+
+.box {
+  height: 79px;
+  width: 81px;
+  border-radius: 6px;
+  background-color: #fff;
+
+}

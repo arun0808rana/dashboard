@@ -1,0 +1,12 @@
+<div class="notification-container bg-white px-2 pt-0 rounded d-flex pb-0" *ngFor="let item of [1,2,3,4]; let i = index;">
+  <div class="left-design mr-2 pt-2 my-2">
+    <div class="position-relative" [ngClass]="{'dot-design-orange': i%2 == 0, 'dot-design-blue': i%2 !=0}">
+        <div class="position-absolute"></div>
+    </div>
+    <div *ngIf="i !=3" class="joiner rounded"></div>
+  </div>
+  <div class="notification-item mr-4 p-2 cursor-pointer my-1">
+    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolores veritatis aspernatur sed expedita adipisci!
+  </div>
+  <div class="hour-box text-muted my-3">{{(i+1)*2}}h</div>
+</div>

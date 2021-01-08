@@ -1,0 +1,53 @@
+.notification-item {
+  width: 320px;
+  color: #0e1b42;
+  font-family: Helvetica;
+  font-size: 14.4px;
+  letter-spacing: 0.24px;
+  line-height: 24px;
+}
+
+.dot-design-orange {
+  .position-absolute {
+    width: 8px;
+    height: 8px;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    background-color: orange;
+    border-radius: 100%;
+  }
+  width: 22px;
+  height: 22px;
+  background-color: rgba(255, 166, 0, 0.274);
+  border-radius: 100%;
+}
+
+.dot-design-blue {
+  .position-absolute {
+    width: 8px;
+    height: 8px;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    background-color: dodgerblue;
+    border-radius: 100%;
+  }
+  width: 22px;
+  height: 22px;
+  background-color: rgba(30, 143, 255, 0.082);
+  border-radius: 100%;
+}
+
+.joiner {
+  width: 4px;
+  height: 90px;
+  background-color: rgba(128, 128, 128, 0.075);
+  position: relative;
+  left: 42%;
+  top: 10%;
+}
+
+div {
+  font-size: 0.6rem;
+}

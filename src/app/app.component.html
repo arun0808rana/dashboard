@@ -1,0 +1,91 @@
+<header class="d-md-none">
+  <div class="container-fluid ">
+    <div class="row">
+      <div class="col-12 py-2">
+        <div class="d-md-none d-flex justify-content-between">
+          <div class="logo-container pl-3 cursor-pointer">
+            <img src="assets/icons/sunstone logo cdr 17 version.png" height="30px">
+          </div>
+          <div class="group-2 d-flex justify-content-between">
+            <div class="bell-icon mr-3 cursor-pointer" data-toggle="modal" data-target="#exampleModalCenter">
+              <img src="assets/icons/Group 7 (1).png" height="20px">
+            </div>
+            <div class="separator"></div>
+            <div class="user-pic pr-2 cursor-pointer"><img src="assets/icons/User-Pic (1).png" height="30px"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<div class="container-fluid d-md-none">
+  <div class="row">
+    <div class="col-12 bg-grey px-4">
+      <div class="bg-grey py-3">
+        <app-box-pills></app-box-pills>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container-fluid bg-primary-sun">
+  <div class="row">
+    <div class="d-none d-md-block col-md-2 LHS p-md-1 bg-white">
+      <app-lhs></app-lhs>
+    </div>
+    <div class="col-md-7 middle-section">
+      <app-dashboard></app-dashboard>
+    </div>
+    <div class="d-none d-md-block col-md-3 RHS">
+      <app-notifications></app-notifications>
+      <app-contact-now></app-contact-now>
+    </div>
+  </div>
+</div>
+
+<footer class="d-block d-lg-none px-5 py-2">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-12">
+        <div class="LHS-links mt-md-3 d-flex justify-content-between">
+          <div class="link-item d-flex align-items-center cursor-pointer">
+            <div class="icon-container mr-2">
+              <img src="assets/icons/Dashboard.png" style="width: 1.5rem;" alt="Dashboard">
+            </div>
+          </div>
+
+          <div class="link-item d-flex align-items-center cursor-pointer">
+            <div class="icon-container mr-2">
+              <img src="assets/icons/Shape 2 (1).png" style="width: 1rem;" alt="Shape">
+            </div>
+            <div class="opp-container d-flex justify-content-between w-100 align-items-center">
+            </div>
+          </div>
+
+          <div class="link-item d-flex align-items-center cursor-pointer">
+            <div class="icon-container mr-2">
+              <img src="assets/icons/Group 7.png" style="width: .7rem;" alt="Profile">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+  aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <app-notifications></app-notifications>
+      </div>
+    </div>
+  </div>
+</div>

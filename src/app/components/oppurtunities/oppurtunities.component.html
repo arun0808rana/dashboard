@@ -1,0 +1,52 @@
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-12">
+      <div class=" d-flex justify-content-between">
+        <div class="heading-container">
+          Opportunities
+        </div>
+        <div class="filter-icon">
+          <img src="assets/icons/noun_filter_1586313.png" alt="filter-icon" class="img-fluid p-1"
+            style="border: 1px solid #4A90E2;border-radius:2px">
+        </div>
+      </div>
+      <div class="job-cards-container bg-white rounded my-3 d-flex py-1" *ngFor="let item of [1,2,3,4]; let i = index"
+        [ngClass]="{'bg-white': i!=1, 'bg-mute':i==1}">
+        <i class="fa fa-circle pink-sun mr-1 mt-2 ml-2"></i>
+        <div class="job-cards px-2 py-1 cursor-pointer bg-white rounded" [ngClass]="{'bg-white': i!=1, 'bg-mute':i==1}">
+          <div class="lhs-content">
+            <div class="d-flex justify-content-between">
+              <div class="jobTitle right"><span class="orange-sun"></span><span class="text-primary">SBI</span> -Marketing Analyst <span class="ml-2">
+                  <img *ngIf="i !=1" height="11px" src="assets/icons/Shape (3).png">
+                </span>
+              <img *ngIf="i==1" src="assets/icons/Group 8 (1).png" class="position-relative d-md-none" height="30px" style="right: -30px;">
+              </div>
+              <div class="d-none d-md-block">INR 30,000/m</div>
+            </div>
+            <div class="date-content d-flex align-items-center my-1">
+              <div class="d-flex">
+                <div class="date mr-3">21<sup>st</sup> April</div>
+                <div class="time d-flex align-items-center">
+                  <i class="d-none d-md-inline-block fa fa-circle text-muted mr-1"></i>
+                  <div *ngIf="i==0" class="text-muted time24" [ngClass]="{'color-pill': (i!=1)}">Internship</div>
+                  <div *ngIf="(i!=0)" class="text-muted time24" [ngClass]="{'color-pill': (i!=1)}">Full Time</div>
+                  <i class="fa fa-circle text-muted mr-1 ml-3"></i>
+                  <div class="text-muted time24">Bangalore</div>
+                </div>
+              </div>
+            </div>
+          </div>
+    
+          <div *ngIf="i != 1" class="btn-controls mt-3">
+            <button class="square_btn orange-bg-sun text-white mr-3">APPLY</button>
+            <button class="square_btn" style="color: #9B9B9B;background-color: #D8D8D8;">NOT INTERESTED</button>
+          </div>
+        </div>
+    
+    
+      </div>
+      <div class="view-all-box text-center blue-sun cursor-pointer">View All (100)</div>
+    
+    </div>
+  </div>
+</div>

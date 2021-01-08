@@ -1,0 +1,47 @@
+
+.heading-container {
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: bold;
+  font-size: 1rem;
+}
+.job-cards-container {
+  border-left: 0.6rem solid white;
+  border-right: 0.6rem solid white;
+  transition-duration: 1s;
+}
+.job-cards div {
+  font-family: "Nunito Sans";
+  font-size: 0.6rem;
+}
+
+.right:after {
+  font-family: "FontAwesome";
+  content: "\f106";
+  float: right;
+  font-size: 20px;
+  color: #4a90e2;
+  transform: rotate(90deg);
+}
+
+.down:after {
+  font-family: "FontAwesome";
+  content: "\f107";
+  float: right;
+  font-size: 20px;
+  color: #4a90e2;
+}
+
+.job-active {
+  border-left: 0.6rem solid #ff7474;
+  transition-duration: 1.3s;
+  i,
+  .time,
+  .time24,
+  .date {
+    color: #d35e5e !important;
+  }
+}
+
+div {
+  font-size: 0.6rem;
+}

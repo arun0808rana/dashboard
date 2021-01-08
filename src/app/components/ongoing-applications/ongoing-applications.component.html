@@ -1,0 +1,64 @@
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-12">
+      <div class="ongoing-container my-3">
+        <div class=" d-flex justify-content-between">
+          <div class="heading-container">
+            Ongoing Applications
+          </div>
+          <div class="filter-icon">
+            <img src="assets/icons/noun_filter_1586313.png" alt="filter-icon" class="img-fluid p-1"
+              style="border: 1px solid #4A90E2;border-radius:2px">
+          </div>
+        </div>
+
+        <div class="job-cards-containers" *ngFor="let item of [1,2,3]; let i = index;">
+          <div class="job-cards-container bg-white rounded my-3" [attr.id]="'item' + i + 'ID'" data-toggle="collapse"
+            [attr.data-target]="'#' + 'item' + item" (click)="handleJobCards('item' + i + 'ID', $event)">
+            <div class="job-cards px-2 py-1 cursor-pointer bg-white rounded">
+              <div class="lhs-content">
+                <div class="jobTitle right"><span class="orange-sun">Test </span>- SBI -Marketing Analyst</div>
+                <div class="date-content d-flex align-items-center my-1">
+                  <i class="fa fa-calendar mr-2"></i>
+                  <div class="d-flex">
+                    <div class="date mr-3">21<sup>st</sup> April</div>
+                    <div class="time d-flex align-items-center">
+                      <i class="fa fa-clock-o text-muted mr-1"></i>
+                      <div class="text-muted time24">18:00</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+            <div class="collapse" [attr.id]="'item' + item">
+              <div class="card card-body border-0 py-1 pb-2">
+                <hr class="mt-0 mb-2">
+                <div class="d-flex justify-content-between align-items-end">
+                  <div class="card-contetn d-flex">
+                    <div class="lhs-content-card-body mr-2">
+                      <div class="text-muted">Question Type</div>
+                      <div class="text-muted">Duration</div>
+                      <div class="text-muted">Venue</div>
+                    </div>
+                    <div class="rhs-content-card-body">
+                      <div>MCQ</div>
+                      <div>2 Hrs</div>
+                      <div>Andheri Nagar Sector 4, Mumbai</div>
+                    </div>
+                  </div>
+                  <div class="view-details-lin-item orange-sun cursor-pointer">
+                    <img src="assets/icons/Shape 2.png">
+                    View Details</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="view-all-box text-center blue-sun cursor-pointer">View All (79)</div>
+      </div>
+
+    </div>
+  </div>
+</div>

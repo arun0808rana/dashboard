@@ -1,0 +1,25 @@
+.lhs-container {
+  height: 100vh;
+}
+.link-item:hover {
+  background: #ffa50017;
+  cursor: pointer;
+}
+
+.center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.pill-sun {
+  padding: 0.2rem;
+  border-radius: 100%;
+  background: rgba(255, 165, 84, 0.33);
+  color: #e17908;
+}
+
+.LHS-links div,
+.badge {
+  font-size: 0.6rem;
+}
